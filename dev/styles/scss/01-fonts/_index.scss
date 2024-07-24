@@ -1,8 +1,27 @@
-//
-// Fonts
-//
-// Import any fonts here, either locally or externally. For example:
-//
-// @import url("http://fonts.googleapis.com/css?family=Hind:400,700&subset=latin,latin-ext");
-// @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-//
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../fonts/Roboto-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../fonts/Roboto-Bold.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../fonts/Roboto-BoldItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}

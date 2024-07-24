@@ -1,0 +1,18 @@
+@media screen and (max-width: 452px) {
+  .header {
+    padding-left: 21px;
+    padding-right: 21px;
+
+    &__options {
+      gap: 0px;
+    }
+
+    &__phone-number {
+      display: none;
+    }
+
+    &__menu-burger {
+      margin-left: 16px;
+    }
+  }
+}

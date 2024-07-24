@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 64px;
+  border: solid 1px #e4e4e4;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    opacity: 100%;
+    color: #d0bc7a;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 72%;
+    }
+  }
+  &__title-image {
+    width: 80.26px;
+  }
+
+  &__options {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__phone {
+    display: flex;
+    color: #d0bc7a;
+    flex-direction: row;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      color: #21242e;
+    }
+  }
+
+  &__phone-number {
+    display: flex;
+  }
+
+  &__phone-icon {
+    stroke: currentColor;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 32px;
+  }
+
+  &__sections-icon {
+    width: 32px;
+    width: 32px;
+    color: #d0bc7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      color: #21242e;
+    }
+  }
+
+  &__menu-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__menu-burger-svg {
+    width: 20px;
+    height: 8px;
+    fill: #21242e;
+
+    &:hover {
+      height: 12px;
+      fill: #d0bc7a;
+    }
+    &:hover path {
+      d: path("M0 1.75H20V0.25H0V1.75ZM0 11.75H20V10.25H0V11.75Z");
+      d: "M0 1.75H20V0.25H0V1.75ZM0 11.75H20V10.25H0V11.75Z";
+    }
+  }
+
+  //   #header__menu-burger-svg path {
+  //     d: "M0 1.75H20V0.25H0V1.75ZM0 7.75H20V6.25H0V7.75Z";
+
+  //     &:hover path {
+  //       d: "M0 1.75H20V0.25H0V1.75ZM0 11.75H20V10.25H0V11.75Z";
+  //     }
+  //   }
+}
