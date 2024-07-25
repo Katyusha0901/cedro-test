@@ -10,7 +10,7 @@
     <script src="../scripts/menu.js"></script>
   </head>
   <body>
-    <div class="header">
+    <div class="header border">
       <div class="header__title">
         <div class="header__title-image">
           <svg
@@ -162,16 +162,19 @@
     <!-- ====================================================================================================== -->
 
     <div class="main-content">
-      <div class="main-content__contents">
-        <div class="main-content__contents-list">
-          <div class="main-content__contents-item change-from-light-to-dark">
-            Профиль
+      <div class="contents border">
+        <div class="contents__list">
+          <div class="contents__profile-group">
+            <div class="contents__item change-from-light-to-dark">ПРОФИЛЬ</div>
+            <div class="contents__item change-from-dark-to-light">
+              МОИ ЗАКАЗЫ
+            </div>
           </div>
-          <div class="main-content__contents-item change-from-dark-to-light">
-            Мои заказы
-          </div>
-          <div class="main-content__contents-item change-from-dark-to-light">
-            Выход
+
+          <div
+            class="contents__item contents__item-exit change-from-dark-to-light"
+          >
+            ВЫХОД
           </div>
         </div>
       </div>
