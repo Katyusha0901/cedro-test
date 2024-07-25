@@ -9,7 +9,10 @@ body {
 }
 
 .border {
-  border: solid 1px #e4e4e4;
+  border-top: solid 1px #e4e4e4;
+  border-right: solid 1px #e4e4e4;
+  border-bottom: solid 1px #e4e4e4;
+  border-left: solid 1px #e4e4e4;
 }
 
 .change-from-light-to-dark {
