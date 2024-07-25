@@ -4,4 +4,20 @@
 
 body {
   margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.change-from-light-to-dark {
+  color: #d0bc7a;
+  &:hover {
+    color: #21242e;
+  }
+}
+
+.change-from-dark-to-light {
+  color: #21242e;
+  &:hover {
+    color: #d0bc7a;
+  }
 }

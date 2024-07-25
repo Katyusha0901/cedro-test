@@ -1,4 +1,4 @@
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 466px) {
   .header {
     padding-left: 21px;
     padding-right: 21px;
@@ -14,5 +14,31 @@
     &__menu-burger {
       margin-left: 16px;
     }
+  }
+}
+@media screen and (max-width: 615px) {
+  .menu {
+    &__content {
+      flex-direction: column;
+      height: 772px;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 16px;
+      padding-top: 96px;
+      gap: 40px;
+    }
+
+    // &__category {
+    //   gap: 16px;
+    // }
+
+    // &__category-title {
+    //   font-size: 16px;
+    // }
+
+    // &__category-list {
+    //   gap: 8px;
+    // }
   }
 }

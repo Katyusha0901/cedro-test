@@ -30,21 +30,14 @@
 
   &__phone {
     display: flex;
-    color: #d0bc7a;
     flex-direction: row;
-    font-family: "Roboto";
     font-weight: 500;
-    font-style: normal;
     font-size: 14px;
     line-height: 24px;
     gap: 7px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
-    &:hover {
-      color: #21242e;
-    }
   }
 
   &__phone-number {
@@ -71,15 +64,10 @@
   &__sections-icon {
     width: 32px;
     width: 32px;
-    color: #d0bc7a;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
-    &:hover {
-      color: #21242e;
-    }
   }
 
   &__menu-burger {
@@ -105,12 +93,4 @@
       d: "M0 1.75H20V0.25H0V1.75ZM0 11.75H20V10.25H0V11.75Z";
     }
   }
-
-  //   #header__menu-burger-svg path {
-  //     d: "M0 1.75H20V0.25H0V1.75ZM0 7.75H20V6.25H0V7.75Z";
-
-  //     &:hover path {
-  //       d: "M0 1.75H20V0.25H0V1.75ZM0 11.75H20V10.25H0V11.75Z";
-  //     }
-  //   }
 }
