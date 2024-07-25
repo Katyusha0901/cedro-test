@@ -79,6 +79,22 @@
     &__group-input {
       width: 100%;
     }
+
+    &__save-changes {
+      padding: 24px 16px;
+    }
+
+    &__save-changes-button {
+      width: 100%;
+
+      &:hover {
+        background-color: #d0bc7a;
+      }
+
+      &:active {
+        opacity: 50%;
+      }
+    }
   }
 }
 

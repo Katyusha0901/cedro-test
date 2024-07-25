@@ -23,6 +23,7 @@
   &__data-title {
     font-size: 24px;
     font-weight: 500;
+    color: #21242e;
   }
 
   &__form {
@@ -54,5 +55,36 @@
     font-size: 16px;
     line-height: 24px;
     padding: 16px;
+    color: rgba($color: #21242e, $alpha: 0.4);
+
+    &:hover {
+      color: #21242e;
+    }
+
+    &:focus {
+      border: solid 1px #000000;
+      color: #21242e;
+    }
+  }
+
+  &__save-changes {
+    padding: 76px;
+  }
+
+  &__save-changes-button {
+    background-color: #21242e;
+    border-radius: 4px;
+    padding: 16px 32px;
+    color: #ffffff;
+    width: 231px;
+    text-align: center;
+
+    &:hover {
+      background-color: #d0bc7a;
+    }
+
+    &:active {
+      opacity: 50%;
+    }
   }
 }
