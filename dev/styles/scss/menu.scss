@@ -73,5 +73,9 @@
     line-height: 24px;
     color: rgba($color: #21242e, $alpha: 0.8);
     opacity: 80%;
+
+    &:hover {
+      color: #21242e;
+    }
   }
 }

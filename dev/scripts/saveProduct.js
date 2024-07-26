@@ -1,4 +1,4 @@
-export let dataStorage = {
+const dataStorage = {
     products: [
         {
             id: 1,
@@ -61,4 +61,19 @@ export let dataStorage = {
             color: `#C08D74`,
         },
     ],
+
+    savedProducts: 0,
 };
+
+export function saveProduct(id) {
+    const element = document.getElementById(id);
+
+    dataStorage.products[id].isSaved = !dataStorage.products[id].isSaved;
+    dataStorage.savedProducts += 1;
+
+    if (dataStorage.products[id].isSaved) {
+        element.classList = `products__save-true`;
+    } else {
+        element.classList = `products__save-false`;
+    }
+}

@@ -1,0 +1,133 @@
+.products {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+
+  &__slide {
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #f7f7f7;
+    width: 256px !important;
+    height: 418px !important;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 232px;
+    top: 24px;
+  }
+
+  &__product-type {
+    background-color: #eb5757;
+    color: #ffffff;
+    padding: 4px 12px 6px 12px;
+    border-radius: 100px;
+    z-index: 1;
+  }
+
+  &__save-false {
+    color: #e4e4e4;
+    width: 21px;
+    height: 17.78px;
+    z-index: 1;
+
+    &:hover {
+      color: #21242e;
+      opacity: 40%;
+    }
+  }
+
+  &__save-true {
+    color: #d0bc7a;
+    width: 21px;
+    height: 17.78px;
+    z-index: 1;
+  }
+
+  &__product-image {
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__picture {
+    height: 312px;
+    width: 218px;
+    position: absolute;
+    top: -41px;
+  }
+
+  &__separator {
+    position: absolute;
+    top: 268px;
+    width: 100%;
+    height: 12px;
+    &_1 {
+      background-color: #c08d74;
+    }
+
+    &_2 {
+      background-color: #ea976f;
+    }
+
+    &_3 {
+      background-color: #c07474;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 100%;
+    position: absolute;
+    top: 268px;
+    gap: 24px;
+  }
+
+  &__charasteristics {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__charasteristics-name {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &__charasteristics-feature {
+    font-size: 14px;
+    width: 400;
+    line-height: 18px;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    line-height: 18px;
+
+    &_new {
+      font-weight: 700;
+    }
+
+    &_old {
+      opacity: 40%;
+      text-decoration: line-through;
+      text-decoration-thickness: 1px;
+    }
+  }
+}
