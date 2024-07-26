@@ -1,0 +1,24 @@
+.trends {
+  display: flex;
+  flex-direction: column;
+  padding-top: 112px;
+  padding-left: 80px;
+  padding-bottom: 112px;
+  gap: 48px;
+
+  &__title {
+    font-size: 48px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+
+    &_light {
+      color: #d0bc7a;
+    }
+
+    &_dark {
+      color: #21242e;
+    }
+  }
+}
