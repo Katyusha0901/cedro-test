@@ -1,0 +1,1 @@
+"use strict";function displayMenu(){var e=document.querySelector(".menu");"none"===e.style.display?e.style.display="flex":e.style.display="none"}Object.defineProperty(exports,"__esModule",{value:!0}),exports.displayMenu=displayMenu;

@@ -1,0 +1,1 @@
+"use strict";var _dataStorage=require("../scripts/dataStorage.js");console.log("".concat(_dataStorage.dataStorage.products[0].id));
