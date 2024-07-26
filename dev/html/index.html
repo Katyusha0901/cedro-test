@@ -217,8 +217,8 @@
 
     <div class="trends">
       <div class="trends__title">
-        <div class="trends__title trends__title_light">ТРЕНДЫ</div>
-        <div class="trends__title trends__title_dark">СЕЗОНА</div>
+        <div class="trends__title_light">ТРЕНДЫ</div>
+        <div class="trends__title_dark">СЕЗОНА</div>
       </div>
 
       <div class="arrow change-from-dark-to-light">
@@ -493,16 +493,109 @@
               </div>
             </div>
           </div>
+
+          <div class="swiper-slide products__slide">
+            <div class="products__header">
+              <div class="products__product-type">Sale</div>
+
+              <div class="products__save-false" id="6" onclick="saveProduct(6)">
+                <svg
+                  width="22"
+                  height="18"
+                  viewBox="0 0 22 18"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="products__product-image">
+              <img
+                class="products__picture"
+                src="./img/product.png"
+                alt="product"
+              />
+            </div>
+
+            <div class="products__separator products__separator_1"></div>
+
+            <div class="products__description">
+              <div class="products__charasteristics">
+                <div class="products__charasteristics-name">
+                  Brown to Blonde
+                </div>
+
+                <div class="products__charasteristics-feature">
+                  Пигмент для бровей
+                </div>
+
+                <div class="products__charasteristics-feature">12 ml.</div>
+              </div>
+
+              <div class="products__price">
+                <div class="products__price products__price_new">1 500 ₽</div>
+                <div class="products__price products__price_old">3 000 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide products__slide">
+            <div class="products__header">
+              <div class="products__product-type">Sale</div>
+
+              <div class="products__save-false" id="7" onclick="saveProduct(7)">
+                <svg
+                  width="22"
+                  height="18"
+                  viewBox="0 0 22 18"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="products__product-image">
+              <img
+                class="products__picture"
+                src="./img/product.png"
+                alt="product"
+              />
+            </div>
+
+            <div class="products__separator products__separator_1"></div>
+
+            <div class="products__description">
+              <div class="products__charasteristics">
+                <div class="products__charasteristics-name">
+                  Brown to Blonde
+                </div>
+
+                <div class="products__charasteristics-feature">
+                  Пигмент для бровей
+                </div>
+
+                <div class="products__charasteristics-feature">12 ml.</div>
+              </div>
+
+              <div class="products__price">
+                <div class="products__price products__price_new">1 500 ₽</div>
+                <div class="products__price products__price_old">3 000 ₽</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 32,
-      });
-    </script>
+    <script src="./scripts/initializeSwiper.js"></script>
   </body>
 </html>

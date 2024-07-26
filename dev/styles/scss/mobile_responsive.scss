@@ -100,11 +100,16 @@
   }
 
   .trends {
-    padding: 76px 16px;
+    padding-top: 76px;
+    padding-bottom: 76px;
     gap: 16px;
 
     &__title {
       font-size: 28px;
+
+      &:first-child {
+        padding-left: 16px;
+      }
     }
   }
 
