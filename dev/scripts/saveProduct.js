@@ -68,12 +68,13 @@ const dataStorage = {
 export function saveProduct(id) {
     const element = document.getElementById(id);
 
-    dataStorage.products[id].isSaved = !dataStorage.products[id].isSaved;
+    dataStorage.products[id - 1].isSaved =
+        !dataStorage.products[id - 1].isSaved;
     dataStorage.savedProducts += 1;
 
-    if (dataStorage.products[id].isSaved) {
-        element.classList = `products__save-true`;
+    if (dataStorage.products[id - 1].isSaved) {
+        element.classList = `product__save-true`;
     } else {
-        element.classList = `products__save-false`;
+        element.classList = `product__save-false`;
     }
 }
