@@ -67,6 +67,24 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
+  }
+
+  &__sections-icon-saved {
+    border-radius: 100px;
+    background-color: #21242e;
+    color: #ffffff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    padding: 3px 2px 3px 2px;
+    width: 13px;
+    height: 14px;
+    position: absolute;
+    top: -7px;
+    left: 19px;
   }
 
   &__menu-burger {

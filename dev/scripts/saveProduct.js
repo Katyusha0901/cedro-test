@@ -2,63 +2,23 @@ const dataStorage = {
     products: [
         {
             id: 1,
-            name: `Brown to Blonde`,
-            description: `Пигмент для бровей`,
-            volume: 12,
-            oldPrice: 3000,
-            newPrice: 1500,
-
-            type: `Sale`,
             isSaved: false,
-            color: `#C08D74`,
         },
         {
             id: 2,
-            name: `Brown to Blonde`,
-            description: `Пигмент для бровей`,
-            volume: 12,
-            oldPrice: 3000,
-            newPrice: 1500,
-
-            type: `Акция! 1+1=3`,
             isSaved: false,
-            color: `#EA976F`,
         },
         {
             id: 3,
-            name: `Brown to Blonde`,
-            description: `Пигмент для бровей`,
-            volume: 12,
-            oldPrice: 3000,
-            newPrice: 1500,
-
-            type: `Sale`,
             isSaved: false,
-            color: `#C07474`,
         },
         {
             id: 4,
-            name: `Brown to Blonde`,
-            description: `Пигмент для бровей`,
-            volume: 12,
-            oldPrice: 3000,
-            newPrice: 1500,
-
-            type: `Бесплатная доставка`,
             isSaved: false,
-            color: `#EA976F`,
         },
         {
             id: 5,
-            name: `Brown to Blonde`,
-            description: `Пигмент для бровей`,
-            volume: 12,
-            oldPrice: 3000,
-            newPrice: 1500,
-
-            type: `Sale`,
             isSaved: false,
-            color: `#C08D74`,
         },
     ],
 
@@ -66,15 +26,25 @@ const dataStorage = {
 };
 
 export function saveProduct(id) {
-    const element = document.getElementById(id);
+    const product = document.getElementById(id);
+    const savedIcon = document.querySelector(`.header__sections-icon-saved`);
+    let savedProductsIds = [1, 2, 3, 4, 4, 5, 6, 7, 8, 8, 8, 88, 8];
 
     dataStorage.products[id - 1].isSaved =
         !dataStorage.products[id - 1].isSaved;
-    dataStorage.savedProducts += 1;
+    dataStorage.products.forEach((product) => {
+        if (product.isSaved) {
+            savedProductsIds.push(product.id);
+        }
+    });
+
+    dataStorage.savedProducts = savedProductsIds.length;
+
+    savedIcon.textContent = dataStorage.savedProducts;
 
     if (dataStorage.products[id - 1].isSaved) {
-        element.classList = `product__save-true`;
+        product.classList = `products__save-true`;
     } else {
-        element.classList = `product__save-false`;
+        product.classList = `products__save-false`;
     }
 }
