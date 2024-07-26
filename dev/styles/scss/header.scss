@@ -17,6 +17,7 @@
       opacity: 72%;
     }
   }
+
   &__title-image {
     width: 80.26px;
   }
@@ -104,6 +105,7 @@
       height: 12px;
       fill: #d0bc7a;
     }
+
     &:hover path {
       d: path("M0 1.75H20V0.25H0V1.75ZM0 11.75H20V10.25H0V11.75Z");
       d: "M0 1.75H20V0.25H0V1.75ZM0 11.75H20V10.25H0V11.75Z";
