@@ -1,10 +1,11 @@
 .menu {
-  background-color: white;
+  background-color: #ffffff;
   position: absolute;
   top: 0px;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 772px;
+  z-index: 1;
 
   &__header {
     width: 100vw;
@@ -74,7 +75,7 @@
     font-size: 16px;
     line-height: 24px;
     color: rgba($color: #21242e, $alpha: 0.8);
-    opacity: 80%;
+    cursor: pointer;
 
     &:hover {
       color: #21242e;
